@@ -16,7 +16,7 @@ body{
     font-family: 'a이끌림B';
     background-color:var(--backgroud-color);
     color : var(--text-color);
-    padding: 0 4% 4%;
+    padding: 0;
 }
 a{
     color :var(--text-color);
