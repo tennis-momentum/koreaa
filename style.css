@@ -186,7 +186,7 @@ legend{
 #search-filter h3{
     text-align: center;
     font-weight: lighter;
-    font-size : 1rem;
+    font-size : 1.2rem;
     margin: 2rem 0 1rem;}
 
 /* .search-box input {
@@ -221,11 +221,11 @@ legend{
  
    }
    .set-location{
-       display: flex;
-       flex-direction: row;
-       justify-content: center;
-       align-items: center;
-       padding-top : 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top : 1rem;
    }
  
  
@@ -234,17 +234,20 @@ legend{
 
 
  .filter-list{
-     list-style: none;
      padding: 0;
      display: flex;
      flex-direction: column;
      justify-content:center;
      align-items: center;
  }
+
+ .filter-list li:before {
+    content: ">";
+    padding: 0 1rem;
+ }
+
  .management {
     display : flex;
-    flex-direction: row;
-    justify-content: flex-start;
     align-items: center;
     height: 5rem;}
 
@@ -255,7 +258,6 @@ legend{
     text-align: left;
     margin: 0;
     font-size: 1.5rem;
-    font-weight: lighter;
  }
  
 
@@ -282,7 +284,7 @@ legend{
     position : relative;
     display: inline-block;            
     background :var(--background-color);
-    padding : 1em 1em;
+    padding : 0.5em 0.5rem;
     color : black;
     text-shadow :blueviolet;
     border-radius:30px;
