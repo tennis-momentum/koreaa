@@ -333,9 +333,9 @@ legend{
 }
 
 @media screen and (max-width: 48rem){
-    html{font-size: 0.7em;}
+    html{font-size: 0.8em;}
 }
 
 @media screen and (max-width: 30rem){
-    html{font-size: 0.5em;}
+    html{font-size: 0.6em;}
 }
