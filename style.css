@@ -38,6 +38,7 @@ header{
 nav{
     padding: 0;
     border-bottom: 1px solid var(--text-color);
+    margin : 0 2rem;
 }
 #main-menu{
     list-style: none;
