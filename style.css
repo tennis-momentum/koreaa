@@ -38,9 +38,8 @@ header{
 nav{
     padding: 0;
     border-bottom: 1px solid var(--text-color);
-    margin: 0 2rem;
 }
-#main-menu{
+nav ul{
     list-style: none;
     color: var(--text-color);
     padding: 0;
@@ -48,10 +47,9 @@ nav{
     min-width: 100px;
     display: flex;
     justify-content: center;
-    flex-wrap : wrap;
 }
 nav ul li{
-    padding: 1em 0.8rem;
+    padding: 1em 0.7rem;
     font-size : 1.3rem;
 }
 
@@ -71,6 +69,7 @@ nav li:hover:after{
     width: 100%;
     left : 0;
 }
+
 
 
 /*search-court*/
@@ -342,4 +341,19 @@ legend{
 
 @media screen and (max-width: 30rem){
     html{font-size: 0.6em;}
+    /* nav ul{
+        min-width: 100px;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        flex-wrap : wrap;
+        text-align: center;
+    } */
+    /* .navbar-toggle{
+        position: absolute;
+        top: 7rem;
+        right: 0;
+        font-size: 2rem;
+    } */
+
 }
