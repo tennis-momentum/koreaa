@@ -356,4 +356,7 @@ legend{
         font-size: 2rem;
     } */
 
+    nav ul li {
+        padding: 1em 0.5rem;
+        font-size: 1.2em;
 }
