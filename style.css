@@ -1,362 +1,113 @@
-@font-face {
-    font-family:'a이끌림B';
-    src: url(KoreanIKR-B);
-}
-@font-face {
-    font-family:'title';
-    src: url(amasis-mt-std-black.otf);
-}
 :root{
-    --text-color:rgb(118,113,113);
-    --background-color:rgb(214, 216, 192 , 0.13);
-    --accent-color:#266E75;
+    --background-color: #F5F5F5;
+    --text-color : #404040;
+    --bright-color:#757575;
+    --accent-color:#FFE8BC;
+ 
+}
+html{
+    font-size:0.8rem;
 }
 body{
+    background-color: var(--background-color);
     margin: 0;
-    font-family: 'a이끌림B';
-    background-color:var(--backgroud-color);
-    color : var(--text-color);
-    padding: 0;
 }
-a{
-    color :var(--text-color);
-    text-decoration : none ;
-
-} 
 header{
-    text-align : center;
-    color: var(--text-color);
-    font-family: 'title';
-    margin : 3rem 0;
+    padding-top: 12rem;
 }
 .title{
-    margin : 0;
-    font-size : 3rem;
-} 
-
-/*navigator*/
-nav{
-    padding: 0;
-    border-bottom: 1px solid var(--text-color);
-}
-nav ul{
-    list-style: none;
+    text-align: center;
     color: var(--text-color);
-    padding: 0;
-    margin: 0;
-    min-width: 100px;
+    font-size: 2.1rem;
+    font-family: 'Roboto Slab', serif;
+}
+
+.total-search{
     display: flex;
     justify-content: center;
-}
-nav ul li{
-    padding: 1em 0.7rem;
-    font-size : 1.3rem;
+    align-items: baseline;
 }
 
-nav li{
-    position: relative;
-}
-nav li:after{
-    content: "";
-    position:absolute;
-    left: 50%;
-    bottom: -1px;
-    width : 0%;
-    border-bottom: 3px solid var(--text-color);
-    transition: all 0.5s;
-}
-nav li:hover:after{
-    width: 100%;
-    left : 0;
-}
-
-
-
-/*search-court*/
-#search-court{
- margin : 1rem 0;
- display: flex;
-justify-content: center;
-align-items: center;
-
-}
-
-#search-court h3 {
-    display : inline-block;
-    width : 8rem;
-    vertical-align: middle;
-    text-align: center;
-    font-size : 1.3rem;
-    margin : 0;
-    padding: 1.5rem 0;
-    font-weight: lighter;
-}
-fieldset{
-    display : inline-block;
-    width : 20rem;
-    vertical-align: middle;
-    border-radius:10px;
-    position : relative;
-    height: 1.8rem;
-
-}
-legend{
-    display: none;
-}
-
-.search-txt{
-    border: none;
-    outline : none;
-    background-color: var(--background-color);
-    float : left;
-    height :1.7rem;
-    width: 15rem;
-    font-family: 'a이끌림B';
-    font-size : 1em;
-}
-
-.search-btn{
-    position: absolute;
-    top: 0.8rem;
-    right: 0.1rem;
-    width: 2rem;
-    height: 2rem;
-    color : var(--text-color);
-    background:var(--background-color);
-}
-
-/*search-location*/
- 
-.selectbox {
-    position: relative;
-    width: 15rem;
-    min-width: 120px;
-    border: 1px solid #999;
-    border-radius: 10px;
-    z-index: 1;
-    margin: 0;
-    font-size: 1rem;
+.input-txt{
     display: inline-block;
-    background-color: #266e7542;
-
-  }
-
-  .selectbox:before {                        /* 가상선택자로 화살표를 만듬 */
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: 1rem;
-    width: 0;
-    height: 0;
-    margin-top: -1px;
-    border-left: 0.5rem solid transparent;
-    border-right: 0.5rem solid transparent;
-    border-top: 0.5rem solid #333;
-  }
-
-  .selectbox label {
-    position: absolute;
-    top: 0;
-    left: 0.5rem;
-    padding: .8rem .5rem;
-    color: rgb(107, 69, 69);
-    z-index: -1;
-  }
-
-  .selectbox select {
-    width: 100%;
-    height: auto;
-    line-height: normal;
-    font-family: inherit;
-    padding: .8rem .5rem;
-    border: 0;
-    opacity: 0;
-    filter:alpha(opacity=0);
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-  }
-
-
-
-
-/* Searchbox*/
-
-#search-filter h3{
+    width: 22rem;
+    border-color:var(--bright-color);
+    border-width: 0 0 2px;
+    height : 2rem;
+    background-color: var(--background-color);
     text-align: center;
-    font-weight: lighter;
-    font-size : 1.2rem;
-    margin: 2rem 0 1rem;}
-
-/* .search-box input {
-  width: 100%;
-  padding: 12px 16px;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  position: absolute;
-  border-radius: 8px 8px 0 0;
-  z-index: 100;
-  border: 8px solid #2f3640;
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.4s;
+    color: var(--bright-color);
+    font-weight: bold;
+    font-size: 1.1rem;
 }
-
-.search-box input:focus {
+.input-txt:focus{
   outline: none;
 }
 
-.select-box .options-container.active ~ .search-box input {
-  opacity: 1;
-  pointer-events: auto;
-} */
-
-
-.current-location{
-    display: inline-block;
-    width : 15rem;
-    vertical-align: middle;
-    margin-left: 2rem;
- 
-   }
-   .set-location{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding-top : 1rem;
-   }
- 
- 
- 
- /*filter list*/
-
-
- .filter-list{
-     padding: 0;
-     display: flex;
-     flex-direction: column;
-     justify-content:center;
-     align-items: center;
- }
-
- .filter-list li:before {
-    content: ">";
-    padding: 0 1rem;
- }
-
- .management {
-    display : flex;
-    align-items: center;
-    height: 5rem;}
-
-
-
- .management > h4{
-    width: 7rem;
-    text-align: left;
-    margin: 0;
-    font-size: 1.5rem;
- }
- 
-
-
-/*search-filter*/
-.container{
-    margin : 0;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: left;
-}
-
-.container div{
-    margin: 0.5rem;
+.search-btn{
+    position: relative;
 
 }
-.container div label{
-    cursor: pointer;
-}
-.container div label>input[type="checkbox"]{
-    display: none;
-}
-.container div span{
-    position : relative;
-    display: inline-block;            
-    background :var(--background-color);
-    padding : 0.5em 0.5rem;
-    color : black;
-    text-shadow :blueviolet;
-    border-radius:30px;
-    font-size : 1.2rem;
-    user-select : none;
-    overflow: hidden;
-    border : 1px solid var(--text-color);
-    width: 6rem;    
-    text-align : center;
-
-}
-.container div label span:before{
-    content: '';
+.s-btn1{
+    float: inline-end;
+    color: var(--bright-color);
     position: absolute;
-    top: 0;
-    width: 100%;
-    height : 50%;
+    top: -0.9rem;
+    right: 0.1rem;
 }
-.container div label>input[type="checkbox"]:checked~span {
-    background: var(--text-color);
+.search-btn2{
+    float: right;
+    color: var(--background-color);
 }
 
-.filter-list li:nth-child(3){
-    position: relative;
-    left: -5rem;
- }
 
- .filter-list li:nth-child(6){
-    position: relative;
-    left: -9.5rem;
- }
-
-.search-all{
+.search-filter{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
 }
-
-
-.search-all > input {
-    display: inline-block;
-    width: 25em;
-    height: 4rem;
-    background-color: #266E75;
-    color: #D6D8C0;
-    font-family: 'a이끌림B';
-    border: none;
+.set-location{
+    width: 12rem;
     border-radius: 10px;
-    font-size: 1.3rem;
+    background-color: var(--text-color);
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1rem;
+    color:var(--accent-color);
+    text-align: center;
+}
+.search-btn3{
+    float: right;
+    color: var(--background-color);
+}
+.set-address legend {
+    background-color: var(--text-color);
+    width: 12rem;
+    border-radius: 10px;
+    vertical-align: middle;
+    color: var(--accent-color);
+    text-align: center;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+form{
+    margin-top: 20px;
+}
+fieldset{
+    color: var(--bright-color);
 }
 
-@media screen and (max-width: 48rem){
-    html{font-size: 0.8em;}
+.search-box label{
+  display: block;
+  text-align: center;
+  padding: 0.5rem 0;
 }
 
-@media screen and (max-width: 30rem){
-    html{font-size: 0.6em;}
-    /* nav ul{
-        min-width: 100px;
-        flex-direction: column;
-        width: 100%;
-        justify-content: center;
-        flex-wrap : wrap;
-        text-align: center;
-    } */
-    /* .navbar-toggle{
-        position: absolute;
-        top: 7rem;
-        right: 0;
-        font-size: 2rem;
-    } */
-
-    nav ul li {
-        padding: 1em 0.5rem;
-        font-size: 1.2em;
+.search-box select{
+  width: 6rem;
+  margin : 1rem 0.5rem 1rem;
+  border-radius: 3px;
+  height: 1.8rem;
 }
