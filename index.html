@@ -5,11 +5,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="court-map" href="main.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <script src=main.js></script>
   <title>테니스 코트찾기-테니스 모멘텀</title>
 </head>
 
@@ -35,11 +37,10 @@
       <div class="set-address">
         <form>
           <fieldset>
-            <legend>지역 내 코트 찾기
-              <a class="search-btn3" href="#">
-                <i class="fas fa-search"></i>
-              </a>
-            </legend>
+              <legend>지역 내 코트 찾기
+                  <a class="search-btn3" href="courtmap.html">
+                    <i class="fas fa-search"></i></a>
+              </legend>
             <div class="search-box">
               <label for="pet-select">지역을 선택해주세요.</label>
               <select  name="pets" id="pet-select">
@@ -65,7 +66,8 @@
         </form>
       </div>
     </div>
-  </main>  
+  </main>
+
   <nav class="sidemenu"></nav>
 </body>
 
